@@ -1,9 +1,12 @@
-import React from 'react'
+import TransactionNewForm from "../Components/TransactionNewForm";
 
-export default function New() {
-    return (
-        <div>
-            
-        </div>
-    )
+function New({ addTransaction }) {
+  return (
+    <div className="New">
+      <h1>New Transaction Form</h1>
+      <TransactionNewForm addTransaction={addTransaction} />
+    </div>
+  );
 }
+
+export default New;

@@ -11,6 +11,7 @@ import Show from "./Pages/Show";
 import Edit from "./Pages/Edit";
 
 import NavBar from "./Components/NavBar";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 const API_BASE = apiURL();
