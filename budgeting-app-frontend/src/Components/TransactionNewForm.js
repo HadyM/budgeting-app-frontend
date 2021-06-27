@@ -48,7 +48,6 @@ function TransactionNewForm(props) {
           <Form.Label>Date</Form.Label>
           <Form.Control
             type="text"
-            id="date"
             value={transaction.date}
             onChange={handleInputChange}
             placeholder="Enter Month and Day"
@@ -62,7 +61,6 @@ function TransactionNewForm(props) {
           <Form.Label>Name</Form.Label>
           <Form.Control
             type="text"
-            id="name"
             value={transaction.name}
             onChange={handleInputChange}
             placeholder="Enter Name of Transaction"
@@ -76,7 +74,6 @@ function TransactionNewForm(props) {
           <Form.Label>From</Form.Label>
           <Form.Control
             type="text"
-            id="from"
             value={transaction.from}
             onChange={handleInputChange}
             placeholder="Enter From"
@@ -90,7 +87,6 @@ function TransactionNewForm(props) {
           <Form.Label>Amount</Form.Label>
           <Form.Control
             type="number"
-            id="amount"
             value={transaction.amount}
             onChange={handleNumberChange}
             placeholder="Enter Amount of Transaction"
@@ -102,7 +98,6 @@ function TransactionNewForm(props) {
         </Form.Group>
         <Form.Group controlId="formBasicCheckbox">
           <Form.Check
-            id="negative"
             type="checkbox"
             label="Check if Negative Amount"
             onChange={handleCheckBoxChange}

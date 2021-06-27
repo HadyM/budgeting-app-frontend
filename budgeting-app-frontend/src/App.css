@@ -195,3 +195,53 @@ body {
   width: 700px;
   height: 500px;
 }
+
+@media screen and (max-width: 1000px) {
+  .NavBar {
+    width: auto;
+  }
+
+  .NavBar button {
+    width: 150px;
+  }
+
+  .Image img {
+    margin-left: 285px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .Image img {
+    margin-left: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .NavBar {
+    width: 600px;
+  }
+
+  .NavBar button {
+    width: 100px;
+    font-size: 10px;
+  }
+
+  .Image img {
+    margin-left: 130px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .NavBar {
+    width: 500px;
+  }
+
+  .NavBar button {
+    width: 90px;
+    font-size: 8px;
+  }
+
+  .Image img {
+    margin-left: 50px;
+  }
+}
