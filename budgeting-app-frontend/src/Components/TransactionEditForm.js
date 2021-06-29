@@ -61,9 +61,10 @@ function TransactionEditForm(props) {
   return (
     <div className="Edit">
       <Form onSubmit={handleSubmit} className="EditForm">
-        <Form.Group controlId="formBasicDate">
+        <Form.Group>
           <Form.Label>Date</Form.Label>
           <Form.Control
+            id="date"
             type="text"
             value={transaction.date}
             onChange={handleInputChange}
@@ -74,9 +75,10 @@ function TransactionEditForm(props) {
             Please enter Full Month and day example "November 23"
           </Form.Text>
         </Form.Group>
-        <Form.Group controlId="formBasicName">
+        <Form.Group>
           <Form.Label>Name</Form.Label>
           <Form.Control
+            id="name"
             type="text"
             value={transaction.name}
             onChange={handleInputChange}
@@ -87,9 +89,10 @@ function TransactionEditForm(props) {
             Please enter Name Description of the Transaction example "Billing"
           </Form.Text>
         </Form.Group>
-        <Form.Group controlId="formBasicFrom">
+        <Form.Group>
           <Form.Label>From</Form.Label>
           <Form.Control
+            id="from"
             type="text"
             value={transaction.from}
             onChange={handleInputChange}
@@ -100,9 +103,10 @@ function TransactionEditForm(props) {
             Please enter Name Description of From example "Apple"
           </Form.Text>
         </Form.Group>
-        <Form.Group controlId="formBasicAmount">
+        <Form.Group>
           <Form.Label>Amount</Form.Label>
           <Form.Control
+            id="amount"
             type="number"
             value={transaction.amount}
             onChange={handleNumberChange}
@@ -113,9 +117,9 @@ function TransactionEditForm(props) {
             Please enter Amount of the Transaction example "500"
           </Form.Text>
         </Form.Group>
-        <Form.Group controlId="formBasicCheckbox">
+        <Form.Group>
           <Form.Check
-            // id="negative"
+            id="negative"
             type="checkbox"
             label="Check if Negative Amount"
             onChange={handleCheckBoxChange}
